@@ -1,0 +1,64 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(231, 223, 253);
+}
+.container{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#face{
+    animation: face 1s linear infinite;
+}
+@keyframes face {
+    0%{
+        transform: translateY(0px);
+    }
+    50%{
+        transform: translateY(30px);
+    }
+    100%{
+        transform: translateY(0px);
+    }
+}
+
+#ears{
+    animation: ears 1s linear infinite;
+}
+@keyframes ears {
+    0%{
+        transform: translateY(0px);
+    }
+    50%{
+        transform: translateY(30px);
+    }
+    100%{
+        transform: translateY(0px);
+    }
+}
+#Vector_15, #Vector_19{
+    animation: music 1.5s linear infinite;
+}
+#Vector_18, #Vector_17{
+    animation: music 1s linear infinite;
+}
+#Vector_16, #Vector_20{
+    animation: music 2s linear infinite;
+}
+@keyframes music {
+    from{
+        transform: translate(0px, 0px );
+        opacity: 1;
+    }
+    to{
+        transform: translate(-20px, -30px );
+        opacity: 0;
+    }
+}
+
